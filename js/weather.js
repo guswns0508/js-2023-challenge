@@ -16,7 +16,7 @@ function onGeoOk(position) {
     });
 }
 function onGeoError() {
-  alert("날씨를 제공할 위치를 찾을 수 없습니다.");
+  alert("날씨를 제공할 위치를 찾을 수 없습니다. 😥");
 }
 
 navigator.geolocation.getCurrentPosition(onGeoOk, onGeoError);
