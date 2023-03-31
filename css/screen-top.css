@@ -1,0 +1,55 @@
+.screen-top {
+  height: 150px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.screen-top__clock,
+.screen-top__weather {
+  background-color: var(--sky);
+  border: var(--main-border);
+  border-radius: var(--main-border-radius);
+  box-shadow: var(--main-box-shadow);
+  width: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* 스크린 상단 */
+
+.clock {
+  font-size: 30px;
+  font-weight: 700;
+}
+/* 시계 */
+
+.screen-top__title {
+  background-color: var(--sky);
+  border: var(--main-border);
+  border-radius: var(--main-border-radius);
+  box-shadow: var(--main-box-shadow);
+  width: 1000px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 40px;
+  font-weight: 700;
+}
+img {
+  width: 65px;
+}
+/* 제목 */
+
+.weather {
+  display: flex;
+  flex-direction: column;
+}
+.weather span:first-child {
+  margin-bottom: 15px;
+  font-size: 20px;
+  font-weight: 700;
+}
+.temp {
+  margin-top: 20px;
+}
+/* 날씨 */
