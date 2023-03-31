@@ -30,13 +30,31 @@
   box-shadow: var(--main-box-shadow);
   width: 1000px;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   font-size: 40px;
   font-weight: 700;
 }
-img {
-  width: 65px;
+.login-form {
+  margin-left: 30px;
+}
+.login-form input:first-child {
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid gray;
+  background-color: transparent;
+}
+.login-form input:last-child {
+  padding: 5px 10px;
+  border-radius: 15px;
+  border: 1px solid gray;
+}
+.login-form input:last-child:hover {
+  cursor: pointer;
+}
+.greeting {
+  font-size: 40px;
+  margin-left: 30px;
 }
 /* 제목 */
 
