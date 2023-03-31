@@ -14,7 +14,19 @@
           <span class="clock"></span>
         </div>
 
-        <span class="screen-top__title"> Welcome to my site ! 😊</span>
+        <span class="screen-top__title">
+          Welcome to my Page!
+          <form class="login-form hidden">
+            <input
+              required
+              maxlength="15"
+              type="text"
+              placeholder="이름을 입력하세요."
+            />
+            <input type="submit" value="로그인" />
+          </form>
+          <h2 class="greeting hidden"></h2>
+        </span>
 
         <div class="screen-top__weather">
           <div class="weather">
@@ -86,17 +98,7 @@
         <div class="screen-bottom__center">
           <div class="screen-bottom__column">
             <div>
-              <div class="login">
-                <form class="login-form hidden">
-                  <input
-                    required
-                    maxlength="15"
-                    type="text"
-                    placeholder="이름을 입력하세요."
-                  />
-                  <input type="submit" value="로그인" />
-                </form>
-                <h2 class="greeting hidden"></h2>
+              <div class="todo">
                 <form class="todo-form">
                   <input
                     type="text"
