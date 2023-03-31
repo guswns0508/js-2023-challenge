@@ -1,0 +1,129 @@
+.screen-bottom {
+  height: 650px;
+  display: flex;
+  justify-content: space-between;
+}
+/* 스크린 하단 */
+
+.random-game,
+.d-day {
+  margin-bottom: 45px;
+  background-color: var(--sky);
+  border: var(--main-border);
+  border-radius: var(--main-border-radius);
+  box-shadow: var(--main-box-shadow);
+  box-sizing: border-box;
+  padding: 20px 40px;
+  width: 350px;
+  height: 300px;
+}
+.random-game input,
+.random-game__btn {
+  border-radius: 10px;
+  border: 1px solid rgb(196, 207, 205);
+  padding: 3px 3px;
+}
+.random-game__btn:hover {
+  cursor: pointer;
+}
+.d-day__name {
+  font-size: 19px;
+  font-weight: 500;
+}
+.d-day div {
+  margin-bottom: 17px;
+}
+/* 랜덤게임 & 디데이 */
+
+.screen-bottom__center {
+  display: flex;
+  flex-direction: column;
+}
+.screen-bottom__column {
+  display: flex;
+}
+
+.login,
+.book-mark {
+  background-color: var(--sky);
+  border: var(--main-border);
+  border-radius: var(--main-border-radius);
+  box-shadow: var(--main-box-shadow);
+  box-sizing: border-box;
+  padding: 20px 40px;
+  width: 465px;
+  height: 545px;
+}
+
+.login {
+  margin-right: 70px;
+}
+.todo-form input {
+  border: 2px solid gray;
+  border-radius: 20px;
+  padding: 15px 20px;
+  font-weight: 700;
+  font-size: 20px;
+  background-color: transparent;
+}
+.todo-list {
+  list-style-type: none;
+  padding: 0px 10px;
+  width: 295px;
+  font-size: 17px;
+}
+.todo-list li {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.todo-list button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.book-mark h2 {
+  margin-bottom: 70px;
+}
+.book-mark__column {
+  margin: 0px 20px;
+  padding-bottom: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+.book-mark__column img:hover {
+  transform: scale(1.2);
+}
+.imo-text {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.quote {
+  background-color: var(--sky);
+  margin-top: 25px;
+  border: var(--main-border);
+  border-radius: 20px;
+  box-shadow: var(--main-box-shadow);
+  height: 75px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* 할 일 & 북마크 & 명언 */
+
+.screen-bottom__right {
+  background-color: var(--sky);
+  border: var(--main-border);
+  border-radius: var(--main-border-radius);
+  box-shadow: var(--main-box-shadow);
+  box-sizing: border-box;
+  padding: 20px 40px;
+  width: 350px;
+}
+
+.video img {
+  width: 275px;
+}
