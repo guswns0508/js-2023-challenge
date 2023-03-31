@@ -123,7 +123,14 @@
   padding: 20px 40px;
   width: 350px;
 }
-
 .video img {
   width: 275px;
+  margin-top: 20px;
+  border-radius: 15px;
 }
+.video p {
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+/* 추천 영상 */
