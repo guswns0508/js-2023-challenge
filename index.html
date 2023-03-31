@@ -5,43 +5,178 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Momentum</title>
+    <title>KBO</title>
   </head>
   <body>
     <div class="screen">
-      <h2 class="clock"></h2>
-      <form class="login-form hidden">
-        <input
-          required
-          maxlength="15"
-          type="text"
-          placeholder="이름을 입력하세요."
-        />
-        <input type="submit" value="로그인" />
-      </form>
-      <h1 class="greeting hidden"></h1>
-      <form class="todo-form">
-        <input
-          type="text"
-          required
-          placeholder="오늘의 할 일을 작성해주세요."
-        />
-      </form>
-      <ul class="todo-list"></ul>
-      <div class="weather">
-        <span></span>
-        <span></span>
+      <div class="screen-top">
+        <div class="screen-top__clock">
+          <span class="clock"></span>
+        </div>
+        <span class="screen-top__title"> Welcome to my site ! 😊</span>
+        <div class="screen-top__weather">
+          <div class="weather">
+            <span></span>
+            <span></span>
+          </div>
+        </div>
       </div>
-      <div class="quote">
-        <span></span>
-        <span></span>
+
+      <div class="screen-bottom">
+        <div class="screen-bottom__left">
+          <div class="random-game">
+            <div>
+              <h2>
+                숫자 랜덤 게임
+                <button
+                  class="random-game__btn"
+                  onClick="window.location.reload()"
+                >
+                  Retry
+                </button>
+              </h2>
+            </div>
+            <form class="form">
+              <h5>
+                1부터 20 범위의 숫자를 입력하세요.
+                <input
+                  class="generate-num"
+                  required
+                  type="number"
+                  max="20"
+                  min="1"
+                />
+              </h5>
+              <span>범위 내 숫자를 입력하시고 당신의 운을 테스트하세요. </span>
+              <input
+                class="guess-num"
+                type="number"
+                required
+                max="20"
+                min="1"
+              />
+              <input class="random-game__btn" type="submit" value="Play!" />
+            </form>
+            <span class="chose-check"></span>
+            <div class="result"></div>
+          </div>
+          <div class="d-day">
+            <h2>디데이 알림</h2>
+            <div>
+              <span class="d-day__name">어린이날 - </span>
+              <span class="js-clock__child"></span>
+            </div>
+            <div>
+              <span class="d-day__name">추석 - </span>
+              <span class="js-clock__thanksgiving"></span>
+            </div>
+            <div>
+              <span class="d-day__name">크리스마스 - </span>
+              <span class="js-clock__xmas"></span>
+            </div>
+            <div>
+              <span class="d-day__name">설날 - </span>
+              <span class="js-clock__newyear"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="screen-bottom__center">
+          <div class="screen-bottom__column">
+            <div>
+              <div class="login">
+                <form class="login-form hidden">
+                  <input
+                    required
+                    maxlength="15"
+                    type="text"
+                    placeholder="이름을 입력하세요."
+                  />
+                  <input type="submit" value="로그인" />
+                </form>
+                <h2 class="greeting hidden"></h2>
+                <form class="todo-form">
+                  <input
+                    type="text"
+                    required
+                    placeholder="오늘의 할 일을 작성해주세요."
+                  />
+                </form>
+                <ul class="todo-list"></ul>
+              </div>
+            </div>
+            <div>
+              <div class="book-mark">
+                <h2>북마크</h2>
+                <div class="book-mark__column">
+                  <div>
+                    <a href="https://www.google.com/" target="self"
+                      ><img src="icon/google.png"
+                    /></a>
+                    <div class="imo-text">구글</div>
+                  </div>
+                  <div>
+                    <a href="https://www.naver.com/" target="self"
+                      ><img src="icon/naver.png"
+                    /></a>
+                    <div class="imo-text">네이버</div>
+                  </div>
+                  <div>
+                    <a href="https://www.youtube.com/" target="self"
+                      ><img src="icon/youtube.png"
+                    /></a>
+                    <div class="imo-text">유튜브</div>
+                  </div>
+                </div>
+                <div class="book-mark__column">
+                  <div>
+                    <a href="http://www.statiz.co.kr/" target="self"
+                      ><img src="icon/slack.png"
+                    /></a>
+                    <div class="imo-text">슬랙</div>
+                  </div>
+                  <div>
+                    <a href="https://github.com/" target="self"
+                      ><img src="icon/github.png"
+                    /></a>
+                    <div class="imo-text">깃허브</div>
+                  </div>
+                  <div>
+                    <a
+                      href="https://developer.mozilla.org/ko/docs/Web/HTML/Element"
+                      target="self"
+                      ><img src="icon/mdn.png"
+                    /></a>
+                    <div class="imo-text">MDN</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="quote">
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="screen-bottom__right">
+          <h2>추천 영상</h2>
+          <div class="video">
+            <div><img src="jpg/video-1.jpg" /></div>
+            <div><img src="jpg/video-1.jpg" /></div>
+          </div>
+        </div>
       </div>
     </div>
-    <script src="js/greeting.js"></script>
-    <script src="js/clock.js"></script>
-    <script src="js/quotes.js"></script>
     <script src="js/background.js"></script>
-    <script src="js/todo.js"></script>
+    <script src="js/clock.js"></script>
     <script src="js/weather.js"></script>
+    <script src="js/game.js"></script>
+    <script src="js/dday.js"></script>
+    <script src="js/greeting.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/quotes.js"></script>
   </body>
 </html>
