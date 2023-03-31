@@ -52,3 +52,5 @@ const author = document.querySelector(".quote span:last-child");
 const todayquotes = quotes[Math.floor(Math.random() * quotes.length)];
 quote.innerText = todayquotes.quote;
 author.innerText = todayquotes.author;
+quote.style.fontWeight = "600";
+quote.style.fontSize = "18px";
